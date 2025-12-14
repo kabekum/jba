@@ -13,7 +13,7 @@ echo "Apply database migrations..."
 python manage.py migrate --noinput
 
 echo "Collect static files..."
-python manage.py collectstatic --noinput
+#python manage.py collectstatic --noinput
 
 # Create superuser if env provided and not exists
 if [ -n "$DJANGO_SUPERUSER_USERNAME" ] && [ -n "$DJANGO_SUPERUSER_EMAIL" ] && [ -n "$DJANGO_SUPERUSER_PASSWORD" ]; then
