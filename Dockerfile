@@ -20,9 +20,9 @@ FROM python:3.11-slim
 #    && rm -rf /var/lib/apt/lists/*
 
 # Create app user
-##ENV APP_USER=app
-##RUN useradd -ms /bin/bash ${APP_USER}
-##WORKDIR /app
+ENV APP_USER=app
+RUN useradd -ms /bin/bash ${APP_USER}
+WORKDIR /app
 
 # Copy dependency files first for caching
 COPY requirements.txt /app/requirements.txt
