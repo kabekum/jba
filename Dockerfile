@@ -31,7 +31,8 @@ RUN pip install -r /app/requirements.txt
 
 # Copy the Django project
 COPY / /app/
-RUN mkdir -p /app/staticfiles && chmod -R 777 /app/staticfiles
+RUN mkdir -p /app/staticfiles 
+
 
 
 # Copy entrypoint
