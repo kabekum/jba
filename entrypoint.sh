@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 set -e
 
-mkdir -p /app/staticfiles
-chmod -R 777 /app/staticfiles
+#mkdir -p /app/staticfiles
+#chmod -R 777 /app/staticfiles
 # Simple entrypoint - run migrations, collectstatic, then daphne
 # Accepts env vars: DJANGO_SUPERUSER_USERNAME, DJANGO_SUPERUSER_EMAIL, DJANGO_SUPERUSER_PASSWORD
 
