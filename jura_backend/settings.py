@@ -89,7 +89,10 @@ CORS_ALLOW_METHODS = [
     'DELETE',
 ]
 
+CORS_ALLOW_CREDENTIALS = True
+
 CORS_ALLOWED_ORIGINS = os.environ.get('CORS_ALLOWED_ORIGINS','*').split(',')
+
 
 
 
