@@ -90,8 +90,12 @@ CORS_ALLOW_METHODS = [
 ]
 
 CORS_ALLOW_CREDENTIALS = True
+CSRF_TRUSTED_ORIGINS = [
+    '*',  # Add your frontend URL
+]
 
 #CORS_ALLOWED_ORIGINS = os.environ.get('CORS_ALLOWED_ORIGINS','*').split(',')
+
 
 
 
