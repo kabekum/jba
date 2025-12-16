@@ -89,6 +89,7 @@ CORS_ALLOW_METHODS = [
     'DELETE',
 ]
 
-CORS_ALLOWED_ORIGINS = os.environ.get('CORS_ALLOWED_ORIGINS','http://localhost:3000,http://localhost:8000,https://flr.onrender.com').split(',')
+CORS_ALLOWED_ORIGINS = os.environ.get('CORS_ALLOWED_ORIGINS','*').split(',')
+
 
 
